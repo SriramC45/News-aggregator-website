@@ -33,7 +33,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 # News-aggregator-website
 1. All News / Home Page
-2. 
+
 ![image](https://github.com/user-attachments/assets/7c6c509f-c0c1-474c-acd3-968481426ffd)
 
 2.Saved Articles
