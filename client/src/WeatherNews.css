@@ -1,0 +1,119 @@
+/* src/WeatherNews.css */
+
+/* Grid container to hold news articles */
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    gap: 20px; /* Add space between the columns and rows */
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Card-style container for each news article */
+  .everything-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .everything-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .everything-card-content {
+    padding: 20px;
+  }
+  
+  /* Title of the article */
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Image container */
+  .everything-card-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Description styling */
+  .description-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  /* Source info styling */
+  .source-info {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .source-info a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .source-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Author and published date */
+  .origin-item {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Save button styling */
+  .save-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+  .save-button:active {
+    background-color: #1f6396;
+    transform: translateY(1px);
+  }
+  
+  /* No image available message */
+  .no-image {
+    grid-column: span 3;
+    text-align: center;
+    font-size: 18px;
+    color: #d9534f;
+    font-weight: bold;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .news-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium-sized screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .news-container {
+      grid-template-columns: 1fr; /* 1 column on smaller screens */
+    }
+  }
+  

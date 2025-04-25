@@ -1,0 +1,143 @@
+*{
+    margin : 0; 
+    padding : 0; 
+    box-sizing: border-box;
+}
+.news-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .news-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .news-title {
+    font-size: 1.25rem;
+    margin: 12px;
+    color: #333;
+  }
+  
+  .news-description {
+    margin: 0 12px 12px;
+    color: #555;
+  }
+  
+  .news-meta {
+    margin: 0 12px 12px;
+    font-size: 0.875rem;
+    color: #888;
+  }
+  
+  .loader {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .pagination-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination-btn:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+  }
+  
+  .pagination-btn:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+.container {
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.heading {
+  color: #333; /* Dark text color for contrast */
+}
+.--heads{
+  color: #3e0303; /* Dark text color for contrast */
+}
+h1 {
+  color: #4A90E2; /* Highlighted color for main heading */
+}
+
+h2 {
+  color: #333; /* Standard color for subheadings */
+}
+
+.text-lg {
+  line-height: 1.6; /* Improved readability */
+  color: #555; /* Slightly lighter text color */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 640px) {
+  .container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+.save-button {
+  background-color: #3490dc; /* Primary blue color */
+  color: white;
+  padding: 0.6rem 1.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.save-button:hover {
+  background-color: #2779bd; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slightly lifts button on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.save-button:active {
+  background-color: #1c3d5a; /* Darkest blue on click */
+  transform: translateY(1px); /* Slightly lowers button on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.save-button:focus {
+  outline: 2px solid #1c3d5a;
+  outline-offset: 2px;
+}
+ 
+
+  
